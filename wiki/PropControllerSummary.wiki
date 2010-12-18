@@ -1,0 +1,26 @@
+= PropController Summary = 
+
+== Features ==
+  * DMX / RDM (galvanically isolated RS485) or Ethernet (WIZNet W5100 module)
+  * USB to Serial interface (FTDI FT232RL)
+  * 4 General I/O headers (4 data pins, 5V, 3.3V, Vin, Gnd)
+  * 1 Special I/O header (4 data pins, 5V, 3.3V, Vin, Gnd, I2C, TTL)
+  * Zero-Cross Sense
+  * System status led (Bi-color)
+
+== Purpose == 
+I wanted to create a DMX/Ethernet swiss army knife for the DIY Christmas community. I wanted to make something that anyone could learn and customize. Because the Propeller's development environment is free and well documented I'm hoping that not only will people learn to develop with the Propeller but also the community will start to create daughterboards (with drivers). This will allow others to use these building blocks to create a custom controller/dimmer.
+
+== Possible Uses == 
+  * Forward or reverse phase Dimming
+  * LED Dimming, RGB or single color
+  * Servo Control
+  * Motor Control
+  * Relay Control
+  * Protocol Conversion
+  * Ethernet to multi-universe DMX node
+  ...or any combination of the above.
+
+== Propeller Resources ==
+  * [http://www.parallax.com/tabid/407/Default.aspx Propeller General Information]
+  * [http://www.parallax.com/Portals/0/Downloads/docs/prod/prop/PELabsFunBook-v1.1.pdf Propeller Tutorial]
