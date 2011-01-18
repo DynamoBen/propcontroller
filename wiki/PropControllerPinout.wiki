@@ -1,0 +1,33 @@
+#PropController Pinouts for Daughterboards.
+
+= PropController Pin-outs =
+
+The PropController has 4 general purpose I/O headers and 1 special purpose I/O header that follows the Parallax MoBo connection standard. Below are the pinouts for both header types. 
+
+= General Purpose I/O =
+The header is a 8 pin 1 row connector. Each header contains 4 data I/O, Vin, 5V, 3.3V, and Ground. The data pin assignments are based on header being used. Below is the pin-out for each header:
+
+  # GND
+  # Vin
+  # Data 1 (P1, P5, P9, P13) 
+  # Data 2 (P2, P6, P10, P14)
+  # Data 3 (P3, P7, P11, P15)
+  # Data 4 (P4, P8, P12, P16)
+  # +5V
+  # +3.3V
+
+= Special Purpose I/O =
+The header is a 12 pin 2 row connector. Each header contains 4 data I/O, EEProm SCL/SDA, TTL TxD/RxD, Vin, 5V, 3.3V, and Ground. Below is the pin-out for the header:
+
+  # GND
+  # +3.3V
+  # TTL Tx / P31
+  # TTL Rx / P30
+  # EEProm SCL / P28
+  # EEProm SDA / P29
+  # P17
+  # P18
+  # P19
+  # P20
+  # +5V
+  # Vin
