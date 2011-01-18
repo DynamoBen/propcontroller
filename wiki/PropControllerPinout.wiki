@@ -16,7 +16,7 @@ The header is a 8 pin 1 row connector. Each header contains 4 data I/O, Vin, 5V,
   # +5V
   # +3.3V
 
-= Special Purpose I/O =
+= Special Purpose I/O (MoBo) =
 The header is a 12 pin 2 row connector. Each header contains 4 data I/O, EEProm SCL/SDA, TTL TxD/RxD, Vin, 5V, 3.3V, and Ground. Below is the pin-out for the header:
 
   # GND
