@@ -5,7 +5,7 @@ There are two versions of the PropController, RS-485/DMX and Ethernet. The DMX v
 Programming the PropController is easy with the on-board USB interface and Parallax's Propeller Tool (a free download from Parallax Inc). 
 To give you a head start a Google Project site has been created to provide both pre-made hardware drivers and completed “program and play” projects. Since the PropController uses the Propeller microcontroller it is supported by a very active community of users at the Parallax forums.
 
-== History and Purpose == 
+== HISTORY and PURPOSE == 
 I wanted to create a DMX/Ethernet swiss army knife for the DIY Christmas community. I wanted to make something that anyone could learn and customize. Because the Propeller's development environment is free and well documented I'm hoping that not only will people learn to develop with the Propeller but also the community will start to create daughterboards (with drivers). This will allow others to use these building blocks to create a custom controller/dimmer.
 
 == APPLICATIONS ==
@@ -29,7 +29,7 @@ I wanted to create a DMX/Ethernet swiss army knife for the DIY Christmas communi
   * Compact size: 3.25” x 3.00” 
   * Free Development environment
 
-== Possible Uses == 
+== POSSIBLE USES == 
   * Forward or reverse phase Dimming
   * LED Dimming, RGB or single color
   * Servo Control
