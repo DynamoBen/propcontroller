@@ -26,7 +26,7 @@ I wanted to create a DMX/Ethernet swiss army knife for the DIY Christmas communi
   * Molex KK I/O connectors
   * 3.3V and 5V voltage regulators 
   * 5V regulator provide 1 ampere of power for external hardware
-  * Compact size: 3.25” x 3.00” 
+  * Compact size: 5.25” x 3.00” 
   * Free Development environment
 
 == POSSIBLE USES == 
