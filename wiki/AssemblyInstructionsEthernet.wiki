@@ -16,8 +16,8 @@ Part Numbers referenced are taken from the Ethernet PropController BOM.
 === Power and Zero Crossing ===
 
  # Install four diodes (D1 - D4) P/N: 1N5817DICT-ND. The diodes have a strip (silver/grey) that must line up with the white silkscreen on the PCB.  (Insert Picture)
- # Install the two 750 Ohm 1/4W resistors (R6 - R7) P/N: 750QBK-ND. The color bands are Violet, Green, Brown, Gold. The resistors have no polarity to worry about.
- # Install the three 10k Ohm 1/4W resistors (R4, R8, R22) P/N: 10KQBK-ND. The color bands are (Brown, Black, Orange, Gold). The resistors have no polarity to worry about.
+ # Install the two 750 Ohm 1/4W resistors (R 6 - R 7) P/N: 750QBK-ND. The color bands are Violet, Green, Brown, Gold. The resistors have no polarity to worry about.
+ # Install the three 10k Ohm 1/4W resistors (R 4, R 8, R 22) P/N: 10KQBK-ND. The color bands are (Brown, Black, Orange, Gold). The resistors have no polarity to worry about.
  # Install the two 47uF capacitors (C2 - C3) P/N: 445-2905-ND. These capacitors have no polarity to worry about.
  # Install the four 0.1uF capacitor (C4, C7, C9, C13) P/N: 445-2634-ND. This capacitor has no polarity to worry about.
  # Install the 3.3 Volt Regulator (VR1) P/N: LM2937ET-3.3-ND. The regulator gets installed with the tab attached to the board with the heat-sink sandwiched in the middle. Be careful not to torque the leads too much when bending them.
@@ -35,9 +35,9 @@ Part Numbers referenced are taken from the Ethernet PropController BOM.
  # Install the Propeller IC (U1) P/N: P8X32A-Q44-ND. (Orientation Note)
  # Install the 512K EEPROM Chip (U2) P/N: 24LC512-I/P-ND (Orientation Note)
  # Install the 2K EEPROM Chip (U6) P/N: 24AA025E48-I/SN-ND (Orientation Note)
- # Install the four 150 Ohm 1/4W resistors (R1, R5, R18, R19) P/N: 150QBK-ND . The color bands are Brown, Green, Brown, Gold. The resistors have no polarity to worry about.
- # Install the 220 Ohm 1/4W resistor (R3). P/N: 220QBK-ND. The color bands are Red, Red, Brown, Gold. The resistors have no polarity to worry about.
- # Install the 33k Ohm 1/4W resistor (R2). P/N: 33KQBK-ND. The color bands are Orange, Orange, Orange, Gold. The resistors have no polarity to worry about. 
+ # Install the four 150 Ohm 1/4W resistors (R 1, R 5, R 18, R 19) P/N: 150QBK-ND . The color bands are Brown, Green, Brown, Gold. The resistors have no polarity to worry about.
+ # Install the 220 Ohm 1/4W resistor (R 3). P/N: 220QBK-ND. The color bands are Red, Red, Brown, Gold. The resistors have no polarity to worry about.
+ # Install the 33k Ohm 1/4W resistor (R 2). P/N: 33KQBK-ND. The color bands are Orange, Orange, Orange, Gold. The resistors have no polarity to worry about. 
  # Install the 5MHz Crystal (X1) P/N: XC1711-ND. There is no polarity or orientation to worry about.
  # Install the 3mm Red LED (L1) P/N: 754-1243-ND (Orientation Note)
  # Install the 3mm Green LED (L2) P/N: 754-1242-ND (Orientation Note)
