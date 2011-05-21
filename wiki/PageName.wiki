@@ -1,0 +1,34 @@
+#summary Assembly Guide for Ethernet Version PropController
+#labels Phase-Deploy
+
+= Assembly Instructions =
+
+This is in no way shape or form the only way to assemble a PropController.
+Part Numbers referenced are taken from the Ethernet PropController BOM.
+
+== Tips ==
+
+ # Start by checking the PCB for any obvious faults, missing/broken traces, holes that aren't clear, etc.
+ # Clean the PCB with Rubbing Alcohol or other PCB cleaner. (Not required, makes things a bit easier).
+ # Get your parts together in order of assembly step, and insure you have the correct number of all needed.
+
+== Assembling the Board ==
+
+=== Power and Zero Crossing ===
+
+ # Install four diodes (D1 - D4) P/N: 1N5817DICT-ND. The diodes have a strip (silver/grey) that must line up with the white silkscreen on the PCB.  (Insert Picture)
+ # Install the two 750 Ohm 1/4W resistors (R6 - R7) P/N: 750QBK-ND. The color bands are Violet, Green, Brown, Gold. The resistors have no polarity to worry about.
+ # Install the 10k Ohm 1/4W resistor (R8) P/N: 10KQBK-ND. The color bands are (Brown, Black, Orange, Gold). The resistors have no polarity to worry about.
+ # Install the two 0.01uF capacitors (C2 - C3) P/N: 399-4260-ND. These capacitors have no polarity to worry about.
+ # Install the 0.1uF capacitor (C13) P/N: 445-2634-ND. This capacitor has no polarity to worry about.
+ # Install the 3.3 Volt Regulator (VR1) P/N: LM2937ET-3.3-ND. The regulator gets installed with the tab attached to the board with the heat-sink sandwiched in the middle. Be careful not to torque the leads too much when bending them.
+ # 
+
+<wiki:comment>
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
+</wiki:comment>
