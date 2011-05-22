@@ -1,4 +1,4 @@
-#summary Assembly Guide for Ethernet Version PropController
+#summary Assembly Guide for Ethernet PropController
 
 = Assembly Instructions =
 
