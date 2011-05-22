@@ -4,6 +4,7 @@
 
 This is in no way shape or form the only way to assemble a PropController.
 Part Numbers referenced are taken from the Ethernet PropController BOM.
+_Issue with VR1/VR2 placement to be updated_
 
 == Tips ==
 
@@ -20,8 +21,8 @@ Part Numbers referenced are taken from the Ethernet PropController BOM.
  # Install the three 10k Ohm 1/4W resistors (R 4, R 8, R 22) P/N: 10KQBK-ND. The color bands are (Brown, Black, Orange, Gold). The resistors have no polarity to worry about.
  # Install the two 47uF capacitors (C2 - C3) P/N: 445-2905-ND. These capacitors have no polarity to worry about.
  # Install the four 0.1uF capacitor (C4, C7, C9, C13) P/N: 445-2634-ND. This capacitor has no polarity to worry about.
- # Install the 3.3 Volt Regulator (VR1) P/N: LM2937ET-3.3-ND. The regulator gets installed with the tab attached to the board with the heat-sink sandwiched in the middle. Be careful not to torque the leads too much when bending them.
- # Install the 5V Volt Regulator (VR2) P/N: 497-1404-5-ND. The regulator gets installed with the tab attached to the board with the heat-sink sandwiched in the middle. Be careful not to torque the leads too much when bending them.
+ # Install the 5V Volt Regulator (VR1) P/N: 497-1404-5-ND. The regulator gets installed with the tab attached to the board with the heat-sink sandwiched in the middle. Be careful not to torque the leads too much when bending them.
+ # Install the 3.3 Volt Regulator (VR2) P/N: LM2937ET-3.3-ND. The regulator gets installed with the tab attached to the board with the heat-sink sandwiched in the middle. Be careful not to torque the leads too much when bending them.
  # Install the Terminal Block (J12) P/N: ED2600-ND. The terminal block gets installed with the holes facing outward.
  # Install the 2200uF capacitor (C1) P/N: P5143-ND. The capacitor _does_ have a polarity. The - - - stripe on the side of the capacitor goes into the Negative lead.
  # Install the Zero Crossing chip (VO1) P/N: H11AA1M-ND. The chip gets installed with the indent matching the silkscreen and the dot denoting pin one matching the silkscreen. (Note: in the picture, you will see a socket, I prefer to put sockets on most of my chips, personal preference, not required).
