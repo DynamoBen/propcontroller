@@ -1,0 +1,28 @@
+=WIZnet W5100 IC=
+
+WIZnet is a South Korean company that creates semiconductors for connectivity. More specifically, WIZnet has created a line of integrated circuits that have a hardware based TCP/IP stack and associated embedded Ethernet interface such as MAC and PHY. The Spinneret Web Server project utilizes the W5100 IC from WIZnet.
+
+The W5100 IC product details can be found at the WIZnet [http://www.wiznet.co.kr/Sub_Modules/en/product/Product_Detail.asp?cate1=5&cate2=7&cate3=26&pid=1011 W5100 product page]:
+
+The basics of the W5100 IC include:
+
+    Two types of MCU to W5100 interface - SPI and parallel (indirect address or direct addressing)
+    Support Hardwired TCP/IP Protocols TCP, UDP, ICMP, IPv4 ARP, IGMP, PPPoE, Ethernet
+    10BaseT/100BaseTX Ethernet PHY embedded
+    Support Auto Negotiation (Full-duplex and half duplex)
+    Support Auto MDI/MDIX
+    Support ADSL connection (with support PPPoE Protocol with PAP/CHAP Authentication mode)
+    Supports 4 independent sockets simultaneously
+    Internal 16Kbytes Memory for Tx/Rx Buffers
+    3.3V operation with 5V I/O signal tolerance 
+
+The PropController utilizes the [http://www.wiznet.co.kr/Sub_Modules/en/product/Product_Detail.asp?cate1=5&cate2=42&cate3=0&pid=1026 WIZnet WIZ812MJ module] which contains a W5100 IC and all the supporting circuitry.
+
+=References and Resources=
+
+There are several references and resource you could use to gain knowledge and insight to working with the W5100. The following is a list of places to start off the treasure hunt.
+
+  * [http://www.wiznet.co.kr/Sub_Modules/en/product/Product_Detail.asp?cate1=5&cate2=7&cate3=26&pid=1011 W5100 product page]
+  * [http://www.circuitcellar.com/Wiznet/ Circuit Cellar 2007 iEthernet Contest]
+  * [http://www.circuitcellar.com/archives/viewable/Eady208/2.html Circuit Cellar iEthernet Bootcamp Article]
+  * [http://www.sparkfun.com/products/9471 Sparkfun W5100 Product Site]
