@@ -22,7 +22,7 @@ The PropController utilizes the [http://www.wiznet.co.kr/Sub_Modules/en/product/
 
 There are several references and resource you could use to gain knowledge and insight to working with the W5100. The following is a list of places to start off the treasure hunt.
 
-    [http://www.wiznet.co.kr/Sub_Modules/en/product/Product_Detail.asp?cate1=5&cate2=7&cate3=26&pid=1011 W5100 product page]
-    [http://www.circuitcellar.com/Wiznet/ Circuit Cellar 2007 iEthernet Contest]
-    [http://www.circuitcellar.com/archives/viewable/Eady208/2.html Circuit Cellar iEthernet Bootcamp Article]
-    [http://www.sparkfun.com/products/9471 Sparkfun W5100 Product Site]
+*[http://www.wiznet.co.kr/Sub_Modules/en/product/Product_Detail.asp?cate1=5&cate2=7&cate3=26&pid=1011 W5100 product page]
+*[http://www.circuitcellar.com/Wiznet/ Circuit Cellar 2007 iEthernet Contest]
+*[http://www.circuitcellar.com/archives/viewable/Eady208/2.html Circuit Cellar iEthernet Bootcamp Article]
+*[http://www.sparkfun.com/products/9471 Sparkfun W5100 Product Site]
