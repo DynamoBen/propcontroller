@@ -1,3 +1,5 @@
+#summary Loading Code to PropController
+
 = Programming the PropController =
 There are two ways to program the PropController using source code. The first method is with the Propeller/Spin Tool Software. The second method is with Propellent Executable. Both methods require you to download all the source files to a local folder on your PC. 
 
@@ -22,5 +24,3 @@ PropController (Ethernet):
  Propellent.exe /eeprom C:\ETH_128\PropControllerEth.spin
 
  
-
-
