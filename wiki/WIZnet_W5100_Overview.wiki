@@ -1,3 +1,5 @@
+#summary Information about Ethernet interface
+
 =WIZnet W5100 IC=
 
 WIZnet is a South Korean company that creates semiconductors for connectivity. More specifically, WIZnet has created a line of integrated circuits that have a hardware based TCP/IP stack and associated embedded Ethernet interface such as MAC and PHY. The Spinneret Web Server project utilizes the W5100 IC from WIZnet.
