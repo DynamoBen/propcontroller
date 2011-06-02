@@ -1,4 +1,4 @@
-#summary PropController Project Description
+#summary Project Description
 
 = PropController Description = 
 
