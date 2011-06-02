@@ -1,6 +1,6 @@
 #summary Assembly Guide for Ethernet PropController
 
-= Assembly Instructions =
+= PropController Ethernet Assembly Instructions =
 
 This is in no way shape or form the only way to assemble a PropController.
 Part Numbers referenced are taken from the Ethernet PropController BOM.
