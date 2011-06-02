@@ -11,11 +11,11 @@ Part Numbers referenced are taken from the Ethernet PropController BOM.
  # Clean the PCB with Rubbing Alcohol (atleast 70%) or other PCB cleaner. 
  # Get your parts together in order of assembly, and insure you have the correct quantities.
 
-== Assembling the Board ==
+== Board Assembly Instructions ==
 
 _All part numbers are [http://www.digikey.com Digikey]_
 
-=== Power and Zero Cross Detect ===
+=== Power and Zero Cross Detect Assembly ===
 
  # Install four diodes (D1 - D4) P/N: 1N5817DICT-ND. The diodes have a strip (silver/grey) that must line up with the white silkscreen on the PCB.  (Insert Picture)
  # Install the two 750 Ohm 1/4W (Violet, Green, Brown, Gold) resistors (R 6 - R 7) P/N: 750QBK-ND. 
@@ -28,13 +28,13 @@ _All part numbers are [http://www.digikey.com Digikey]_
  # Install the 2200uF capacitor (C1) P/N: P5143-ND. The capacitor _does_ have a polarity. The - - - stripe on the side of the capacitor goes into the Negative lead.
  # Install socket and Zero Crossing chip (VO1) P/N: H11AA1M-ND. The chip gets installed with the indent matching the silkscreen and the dot denoting pin one matching the silkscreen. 
 
-=== Test the Power ===
+=== Test Power Supply ===
 
 5V, 3.3V, and GND test points are located on the board near the voltage regulators. Using a multimeter test the voltages between 5V and GND, and 3.3V and GND. 
 
 *Do not proceed with assembly if these voltages are out of spec!*
 
-=== Main Board ===
+=== Main Board Assembly ===
 
 *Note:* If using SMT USB option install all all surface mount parts first, starting with the USB connector. (See instructions below)
 
@@ -55,14 +55,14 @@ _All part numbers are [http://www.digikey.com Digikey]_
  # Install the 12-Position Male Header (J5) P/N: WM8124-ND. Be sure it sits flush with the PCB. (It is helpful to tack 1 pin down and re-adjust if necessary)
  # Install the 2-Position Male Header (J13) P/N: WM8072-ND. Be sure that it sits flush with the PCB. (It is helpful to tack 1 pin down and re-adjust if necessary)
 
-=== USB Connection (SMT Option) ===  
+=== SMT USB Option Assembly ===  
 
  # Install the USB Mini Connector (J11) P/N: 732-2109-ND
  # Install the FTDI 232 Chip (U5) P/N: 768-1007-1-ND.
  # Install the 4.7uF capacitor (C6) P/N: 445-2867-ND. 
  # Install the 0.1uF capacitor (C7) P/N: 445-2634-ND. 
 
-=== USB Connection (Through Hole Option) ===
+=== Through Hole USB Option Assembly ===
 
  # Install the Female Headers for the DLP Design Module. Make sure they sit flush with the PCB.
 
