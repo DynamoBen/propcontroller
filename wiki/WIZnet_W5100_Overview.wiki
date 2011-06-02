@@ -6,15 +6,15 @@ The W5100 IC product details can be found at the WIZnet [http://www.wiznet.co.kr
 
 The basics of the W5100 IC include:
 
-    Two types of MCU to W5100 interface - SPI and parallel (indirect address or direct addressing)
-    Support Hardwired TCP/IP Protocols TCP, UDP, ICMP, IPv4 ARP, IGMP, PPPoE, Ethernet
-    10BaseT/100BaseTX Ethernet PHY embedded
-    Support Auto Negotiation (Full-duplex and half duplex)
-    Support Auto MDI/MDIX
-    Support ADSL connection (with support PPPoE Protocol with PAP/CHAP Authentication mode)
-    Supports 4 independent sockets simultaneously
-    Internal 16Kbytes Memory for Tx/Rx Buffers
-    3.3V operation with 5V I/O signal tolerance 
+    * Two types of MCU to W5100 interface - SPI and parallel (indirect address or direct addressing)
+    * Support Hardwired TCP/IP Protocols TCP, UDP, ICMP, IPv4 ARP, IGMP, PPPoE, Ethernet
+    * 10BaseT/100BaseTX Ethernet PHY embedded
+    * Support Auto Negotiation (Full-duplex and half duplex)
+    * Support Auto MDI/MDIX
+    * Support ADSL connection (with support PPPoE Protocol with PAP/CHAP Authentication mode)
+    * Supports 4 independent sockets simultaneously
+    * Internal 16Kbytes Memory for Tx/Rx Buffers
+    * 3.3V operation with 5V I/O signal tolerance 
 
 The PropController utilizes the [http://www.wiznet.co.kr/Sub_Modules/en/product/Product_Detail.asp?cate1=5&cate2=42&cate3=0&pid=1026 WIZnet WIZ812MJ module] which contains a W5100 IC and all the supporting circuitry.
 
