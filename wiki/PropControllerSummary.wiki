@@ -1,3 +1,5 @@
+#summary PropController Project Description
+
 = PropController Description = 
 
 The PropController is an open source single-board hardware platform designed for lighting and prop control. Based on the Parallax Propeller microcontroller, the PropController has 24 I/O pins, can be powered by both AC and DC supplies. Some of things you could control with the PropController include AC Dimmers, Low Voltage DC LEDs, Pixel Strings, hobby servos, and even motors.
