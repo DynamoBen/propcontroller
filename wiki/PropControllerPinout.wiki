@@ -1,4 +1,4 @@
-#PropController Pinouts for Daughterboards.
+#summary PropController Pinouts for Daughterboards.
 
 = PropController Pin-outs =
 
