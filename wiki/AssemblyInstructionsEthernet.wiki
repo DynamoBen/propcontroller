@@ -15,7 +15,7 @@ Part Numbers referenced are taken from the Ethernet PropController BOM.
 
 _All part numbers are [http://www.digikey.com Digikey]_
 
-=== Power and Zero Crossing ===
+=== Power and Zero Cross Detect ===
 
  # Install four diodes (D1 - D4) P/N: 1N5817DICT-ND. The diodes have a strip (silver/grey) that must line up with the white silkscreen on the PCB.  (Insert Picture)
  # Install the two 750 Ohm 1/4W (Violet, Green, Brown, Gold) resistors (R 6 - R 7) P/N: 750QBK-ND. 
