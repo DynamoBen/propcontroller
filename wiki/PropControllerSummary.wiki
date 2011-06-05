@@ -41,7 +41,7 @@ I wanted to create a DMX/Ethernet swiss army knife for the DIY Christmas communi
   * Ethernet to multi-universe DMX node
   ...or any combination of the above.
 
-== PropellerController Resources ==
+== PropController Resources ==
   * [http://doityourselfchristmas.com/forums/forumdisplay.php?91-PropController PropController Forum] 
 
 == Propeller Resources ==
