@@ -44,3 +44,4 @@ I wanted to create a DMX/Ethernet swiss army knife for the DIY Christmas communi
 == Propeller Resources ==
   * [http://www.parallax.com/tabid/407/Default.aspx Propeller General Information]
   * [http://www.parallax.com/Portals/0/Downloads/docs/prod/prop/PELabsFunBook-v1.1.pdf Propeller Tutorial]
+  * [http://doityourselfchristmas.com/forums/forumdisplay.php?91-PropController PropController Forum] 
