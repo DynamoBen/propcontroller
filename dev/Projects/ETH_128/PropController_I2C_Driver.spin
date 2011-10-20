@@ -1,5 +1,5 @@
 '' PropController I2C Routines  Version 1.0
-''
+
 '' Based on Basic I2C Routines Version 1.1
 '' Written by Michael Green and copyright (c) 2007
 '' Permission is given to use this in any program for the Parallax
@@ -46,7 +46,7 @@
 ''   byte buffer[32]
 
 '' OBJ
-''   i2c : "Minimal_I2C_Driver"
+''   i2c : "PropController_I2C_Driver"
 
 '' PRI readIt
 ''   if i2c.ReadPage(i2c#BootPin, i2c#EEPROM, eepromAddress, @buffer, 32)
@@ -81,6 +81,7 @@ CON
    EEPROM   = $A0                      ' I2C EEPROM Device Address
 
 PUB Initialize(SCL) | SDA              ' An I2C device may be left in an
+
    SDA := SCL + 1                      '  invalid state and may need to be
    outa[SCL] := 1                       '   reinitialized.  Drive SCL high.
    dira[SCL] := 1
@@ -92,6 +93,7 @@ PUB Initialize(SCL) | SDA              ' An I2C device may be left in an
          quit                          '  by the EEPROM
 
 PUB Start(SCL) | SDA                   ' SDA goes HIGH to LOW with SCL HIGH
+
    SDA := SCL + 1
    outa[SCL]~~                         ' Initially drive SCL HIGH
    dira[SCL]~~
@@ -101,6 +103,7 @@ PUB Start(SCL) | SDA                   ' SDA goes HIGH to LOW with SCL HIGH
    outa[SCL]~                          ' Leave SCL LOW
   
 PUB Stop(SCL) | SDA                    ' SDA goes LOW to HIGH with SCL High
+
    SDA := SCL + 1
    outa[SCL]~~                         ' Drive SCL HIGH
    outa[SDA]~~                         '  then SDA HIGH
@@ -111,6 +114,7 @@ PUB Write(SCL, data) : ackbit | SDA
 '' Write i2c data.  Data byte is output MSB first, SDA data line is valid
 '' only while the SCL line is HIGH.  Data is always 8 bits (+ ACK/NAK).
 '' SDA is assumed LOW and SCL and SDA are both left in the LOW state.
+
    SDA := SCL + 1
    ackbit := 0 
    data <<= 24
@@ -128,6 +132,7 @@ PUB Write(SCL, data) : ackbit | SDA
 PUB Read(SCL, ackbit): data | SDA
 '' Read in i2c data, Data byte is output MSB first, SDA data line is
 '' valid only while the SCL line is HIGH.  SCL and SDA left in LOW state.
+
    SDA := SCL + 1
    data := 0
    dira[SDA]~                          ' Make SDA an input
@@ -146,6 +151,7 @@ PUB ReadPage(SCL, devSel, addrReg, dataPtr, count) : ackbit
 '' address is addrReg.  Data address is at dataPtr.  Number of bytes is count.
 '' The device select code is modified using the upper 3 bits of the 19 bit addrReg.
 '' Return zero if no errors or the acknowledge bits if an error occurred.
+
    devSel |= addrReg >> 15 & %1110
    Start(SCL)                          ' Select the device & send address
    ackbit := Write(SCL, devSel | Xmit)
@@ -163,6 +169,7 @@ PUB ReadByte(SCL, devSel, addrReg) : data
 '' Read in a single byte of i2c data.  Device select code is devSel.  Device
 '' starting address is addrReg.  The device select code is modified using the
 '' upper 3 bits of the 19 bit addrReg.  This returns true if an error occurred.
+
    if ReadPage(SCL, devSel, addrReg, @data, 1)
       return -1
 
@@ -170,6 +177,7 @@ PUB ReadWord(SCL, devSel, addrReg) : data
 '' Read in a single word of i2c data.  Device select code is devSel.  Device
 '' starting address is addrReg.  The device select code is modified using the
 '' upper 3 bits of the 19 bit addrReg.  This returns true if an error occurred.
+
    if ReadPage(SCL, devSel, addrReg, @data, 2)
       return -1
 
@@ -178,6 +186,7 @@ PUB ReadLong(SCL, devSel, addrReg) : data
 '' starting address is addrReg.  The device select code is modified using the
 '' upper 3 bits of the 19 bit addrReg.  This returns true if an error occurred.
 '' Note that you can't distinguish between a return value of -1 and true error.
+
    if ReadPage(SCL, devSel, addrReg, @data, 4)
       return -1
 
@@ -189,6 +198,7 @@ PUB WritePage(SCL, devSel, addrReg, dataPtr, count) : ackbit
 '' Return zero if no errors or the acknowledge bits if an error occurred.  If
 '' more than 31 bytes are transmitted, the sign bit is "sticky" and is the
 '' logical "or" of the acknowledge bits of any bytes past the 31st.
+
    devSel |= addrReg >> 15 & %1110
    Start(SCL)                          ' Select the device & send address
    ackbit := Write(SCL, devSel | Xmit)
@@ -198,16 +208,16 @@ PUB WritePage(SCL, devSel, addrReg, dataPtr, count) : ackbit
       ackbit := ackbit << 1 | ackbit & $80000000 ' "Sticky" sign bit         
       ackbit |= Write(SCL, byte[dataPtr++])
    Stop(SCL)
+   
    return ackbit
 
 PUB WriteByte(SCL, devSel, addrReg, data)
 '' Write out a single byte of i2c data.  Device select code is devSel.  Device
 '' starting address is addrReg.  The device select code is modified using the
 '' upper 3 bits of the 19 bit addrReg.  This returns true if an error occurred.
+
    if WritePage(SCL, devSel, addrReg, @data, 1)
-      return true
-   ' james edit - wait for 5ms for page write to complete (80_000 * 5 = 400_000)      
-   waitcnt(400_000 + cnt)      
+      return true                               
    return false
 
 PUB WriteWord(SCL, devSel, addrReg, data)
@@ -215,10 +225,9 @@ PUB WriteWord(SCL, devSel, addrReg, data)
 '' starting address is addrReg.  The device select code is modified using the
 '' upper 3 bits of the 19 bit addrReg.  This returns true if an error occurred.
 '' Note that the word value may not span an EEPROM page boundary.
+
    if WritePage(SCL, devSel, addrReg, @data, 2)
       return true
-   ' james edit - wait for 5ms for page write to complete (80_000 * 5 = 400_000)
-   waitcnt(400_000 + cnt)      
    return false
 
 PUB WriteLong(SCL, devSel, addrReg, data)
@@ -226,11 +235,9 @@ PUB WriteLong(SCL, devSel, addrReg, data)
 '' starting address is addrReg.  The device select code is modified using the
 '' upper 3 bits of the 19 bit addrReg.  This returns true if an error occurred.
 '' Note that the long word value may not span an EEPROM page boundary.
+
    if WritePage(SCL, devSel, addrReg, @data, 4)
-      return true
-      
-' james edit - wait for 5ms for page write to complete (80_000 * 5 = 400_000)      
-   waitcnt(400_000 + cnt)      
+      return true                                                                                                                            
    return false
 
 PUB WriteWait(SCL, devSel, addrReg) : ackbit
@@ -238,6 +245,7 @@ PUB WriteWait(SCL, devSel, addrReg) : ackbit
 '' starting address is addrReg.  The device will not respond if it is busy.
 '' The device select code is modified using the upper 3 bits of the 18 bit addrReg.
 '' This returns zero if no error occurred or one if the device didn't respond.
+
    devSel |= addrReg >> 15 & %1110
    Start(SCL)
    ackbit := Write(SCL, devSel | Xmit)
@@ -245,26 +253,30 @@ PUB WriteWait(SCL, devSel, addrReg) : ackbit
    return ackbit
 
 
-' >>>>>>>>>>>>>>>> JAMES'S Extra BITS <<<<<<<<<<<<<<<<<<<<<
+' >>>>>>>>>>>>>>>> Customizations for MAC IC <<<<<<<<<<<<<<<<<<<<<
    
-PUB devicePresent(SCL,deviceAddress) : ackbit
-  ' send the deviceAddress and listen for the ACK
+PUB DevicePresent(SCL, deviceAddress) : ackbit
+'' Send the deviceAddress and listen for the ACK
+
    Start(SCL)
-   ackbit := Write(SCL,deviceAddress | 0)
+   ackbit := Write(SCL, deviceAddress | 0)
    Stop(SCL)
+   
    if ackbit == ACK
      return true
    else
      return false
 
-PUB writeLocation(SCL,device_address, register, value)
+PUB WriteLocation(SCL, device_address, register, value)
+
   start(SCL)
   write(SCL,device_address)
   write(SCL,register)
   write(SCL,value)  
   stop (SCL)
 
-PUB readLocation(SCL,device_address, register) : value
+PUB ReadLocation(SCL, device_address, register) : value
+
   start(SCL)
   write(SCL,device_address | 0)
   write(SCL,register)
@@ -272,4 +284,5 @@ PUB readLocation(SCL,device_address, register) : value
   write(SCL,device_address | 1)  
   value := read(SCL,NAK)
   stop(SCL)
+  
   return value     
