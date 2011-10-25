@@ -46,7 +46,7 @@
 ''   byte buffer[32]
 
 '' OBJ
-''   i2c : "PropController_I2C_Driver"
+''   i2c : "I2C_Driver"
 
 '' PRI readIt
 ''   if i2c.ReadPage(i2c#BootPin, i2c#EEPROM, eepromAddress, @buffer, 32)
@@ -210,7 +210,7 @@ PUB WritePage(SCL, devSel, addrReg, dataPtr, count) : ackbit
    Stop(SCL)
    
    return ackbit
-
+   
 PUB WriteByte(SCL, devSel, addrReg, data)
 '' Write out a single byte of i2c data.  Device select code is devSel.  Device
 '' starting address is addrReg.  The device select code is modified using the
@@ -252,7 +252,6 @@ PUB WriteWait(SCL, devSel, addrReg) : ackbit
    Stop(SCL)
    return ackbit
 
-' >>>>>>>>>>>>>>>> Customizations for MAC IC <<<<<<<<<<<<<<<<<<<<<   
 PUB DevicePresent(SCL, deviceAddress) : ackbit
 '' Send the deviceAddress and listen for the ACK
 
@@ -263,24 +262,23 @@ PUB DevicePresent(SCL, deviceAddress) : ackbit
    if ackbit == ACK
      return true
    else
-     return false
+     return false                                                           
 
-PUB WriteLocation(SCL, device_address, register, value)
+PUB WriteLocation(SCL, devSel, addrReg, data) : ackbit    
 
   start(SCL)
-  write(SCL,device_address)
-  write(SCL,register)
-  write(SCL,value)  
+  ackbit := write(SCL, devSel)
+  ackbit := write(SCL, addrReg)
+  ackbit |= write(SCL, data)
   stop (SCL)
 
-PUB ReadLocation(SCL, device_address, register) : value
+PUB ReadLocation(SCL, devSel, addrReg) : data 
 
+  Start(SCL)
+  write(SCL, devSel | 0)
+  write(SCL, addrReg)
   start(SCL)
-  write(SCL,device_address | 0)
-  write(SCL,register)
-  start(SCL)
-  write(SCL,device_address | 1)  
-  value := read(SCL,NAK)
-  stop(SCL)
-  
-  return value     
+  write(SCL, devSel | 1)
+  data := read(SCL, NAK)
+  Stop(SCL)
+              
