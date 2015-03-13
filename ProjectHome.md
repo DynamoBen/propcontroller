@@ -1,0 +1,5 @@
+The PropController is a Parallax Propeller based DMX/Ethernet swiss army knife originally intended for the DIY Christmas and Halloween communities. This device acts as building block to create custom lighting, FX, and animatronics control. There are currently two versions of the PropController one for RS485 (DMX) and one for Ethernet (sACN (E1.31) - Lightweight streaming protocol for transport of DMX512 using ACN, or ArtNet).
+
+The PropController provides data input and control and is intended to be a development platform to assist in the creation of custom DMX and Ethernet devices. Because the PropController uses daugtherboards for control and input, this project is meant to promote development of daughterboards and their associated drivers and code. This project also acts as a code  repository and information hub for owners of the PropController.
+
+[PropController Forum](http://doityourselfchristmas.com/forums/forumdisplay.php?91-PropController)

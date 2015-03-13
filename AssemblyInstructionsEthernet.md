@@ -1,0 +1,74 @@
+# PropController Ethernet Assembly Instructions #
+
+This is in no way shape or form the only way to assemble a PropController.
+Part Numbers referenced are taken from the Ethernet PropController BOM.
+
+## Tips ##
+
+  1. Start by checking the PCB for any obvious faults, missing/broken traces, holes that aren't clear, etc.
+  1. Clean the PCB with Rubbing Alcohol (atleast 70%) or other PCB cleaner.
+  1. Get your parts together in order of assembly, and insure you have the correct quantities.
+
+## Board Assembly Instructions ##
+
+_All part numbers are [Digikey](http://www.digikey.com)_
+
+### Power and Zero Cross Detect Assembly ###
+
+  1. Install four diodes (D1 - D4) P/N: 1N5817DICT-ND. The diodes have a strip (silver/grey) that must line up with the white silkscreen on the PCB.  (Insert Picture)
+  1. Install the two 750 Ohm 1/4W (Violet, Green, Brown, Gold) resistors (R 6 - R 7) P/N: 750QBK-ND.
+  1. Install the three 10k Ohm 1/4W (Brown, Black, Orange, Gold) resistors (R 4, R 8, R 22) P/N: 10KQBK-ND.
+  1. Install the two 47uF capacitors (C2 - C3) P/N: 445-2905-ND. The capacitor _does_ have a polarity. The - - - stripe on the side of the capacitor goes into the Negative lead.
+  1. Install the four 0.1uF capacitor (C4, C7, C9, C13) P/N: 445-2634-ND.
+  1. Install the 5V Volt Regulator (VR1) P/N: 497-1404-5-ND. Bend the leads to match the boards foot print. Install the regulator with the tab attached the heat-sink and the heat-sink to the board (don't forget to use thermal grease).
+  1. Install the 3.3 Volt Regulator (VR2) P/N: LM2937ET-3.3-ND. Bend the leads to match the boards foot print. Install the regulator with the tab attached the heat-sink and the heat-sink to the board (don't forget to use thermal grease).
+  1. Install the Terminal Block (J12) P/N: ED2600-ND. The terminal block gets installed with the holes facing outward.
+  1. Install the 2200uF capacitor (C1) P/N: P5143-ND. The capacitor _does_ have a polarity. The - - - stripe on the side of the capacitor goes into the Negative lead.
+  1. Install socket and Zero Crossing chip (VO1) P/N: H11AA1M-ND. The chip gets installed with the indent matching the silkscreen and the dot denoting pin one matching the silkscreen.
+
+### Test Power Supply ###
+
+5V, 3.3V, and GND test points are located on the board near the voltage regulators. Using a multimeter test the voltages between 5V and GND, and 3.3V and GND.
+
+**Do not proceed with assembly if these voltages are out of spec!**
+
+### Main Board Assembly ###
+
+**Note:** If using SMT USB option install all all surface mount parts first, starting with the USB connector. (See instructions below)
+
+  1. Install the Propeller IC (U1) P/N: P8X32A-Q44-ND. (Orientation Note)
+  1. Install the 2K EEPROM Chip (U6) P/N: 24AA025E48-I/SN-ND (Orientation Note)
+  1. Install socket and 512K EEPROM Chip (U2) P/N: 24LC512-I/P-ND (Orientation Note)
+  1. Install the four 150 Ohm 1/4W (Brown, Green, Brown, Gold) resistors (R 1, R 5, R 18, R 19) P/N: 150QBK-ND .
+  1. Install the 220 Ohm 1/4W (Red, Red, Brown, Gold) resistor (R 3). P/N: 220QBK-ND.
+  1. Install the 33k Ohm 1/4W (Orange, Orange, Orange, Gold) resistor (R 2). P/N: 33KQBK-ND.
+  1. Install the 5MHz Crystal (X1) P/N: XC1711-ND.
+  1. Install the 3mm Red LED (L1) P/N: 754-1243-ND (Orientation Note)
+  1. Install the 3mm Green LED (L2) P/N: 754-1242-ND (Orientation Note)
+  1. Install the 5mm Red/Green LED (L3) P/N: 754-1278-ND (Orientation Note)
+  1. Install the Reset Switch (PB1) P/N: 450-1650-ND. (Orientation Note)
+  1. Install the Transistor (Q1) P/N: P2N2222AGOS-ND. Make sure the body of the package lines up with the silkscreen on the PCB.
+  1. Install the Female Headers P/N: S7078-ND for the WizNet Module. Make sure they sit flush with the PCB.
+  1. Install the four 8-Position Male Headers (J1 - J4) P/N: WM4206-ND. Be sure they sit flush with the PCB. (It is helpful to tack 1 pin down and re-adjust if necessary)
+  1. Install the 12-Position Male Header (J5) P/N: WM8124-ND. Be sure it sits flush with the PCB. (It is helpful to tack 1 pin down and re-adjust if necessary)
+  1. Install the 2-Position Male Header (J13) P/N: WM8072-ND. Be sure that it sits flush with the PCB. (It is helpful to tack 1 pin down and re-adjust if necessary)
+
+### SMT USB Option Assembly ###
+
+  1. Install the USB Mini Connector (J11) P/N: 732-2109-ND
+  1. Install the FTDI 232 Chip (U5) P/N: 768-1007-1-ND.
+  1. Install the 4.7uF capacitor (C6) P/N: 445-2867-ND.
+  1. Install the 0.1uF capacitor (C7) P/N: 445-2634-ND.
+
+### Through Hole USB Option Assembly ###
+
+  1. Install the Female Headers for the DLP Design Module. Make sure they sit flush with the PCB.
+
+<a href='Hidden comment: 
+= Details =
+
+Add your content here.  Format your content with:
+* Text in *bold* or _italic_
+* Headings, paragraphs, and lists
+* Automatic links to other wiki pages
+'></a>
