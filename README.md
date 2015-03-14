@@ -1,9 +1,9 @@
 # propcontroller
 Automatically exported from code.google.com/p/propcontroller
 
-PropController? Description
+PropController Description
 
-The PropController? is an open source single-board hardware platform designed for lighting and prop control. Based on the Parallax Propeller microcontroller, the PropController? has 24 I/O pins, can be powered by both AC and DC supplies. Some of things you could control with the PropController? include AC Dimmers, Low Voltage DC LEDs, Pixel Strings, hobby servos, and even motors. There are two versions of the PropController?, RS-485/DMX and Ethernet. The DMX version features a galvanically isolated RS-485 half-duplex interface. The Ethernet version features the WizNet? WIZ812MJ, which makes communicating via Ethernet easy. In addition, both versions are designed to be compact and have 4 mounting holes allowing it to be mounted into any enclosure. Programming the PropController? is easy with the on-board USB interface and Parallax's Propeller Tool (a free download from Parallax Inc). To give you a head start a Google Project site has been created to provide both pre-made hardware drivers and completed “program and play” projects. Since the PropController? uses the Propeller microcontroller it is supported by a very active community of users at the Parallax forums.
+The PropController is an open source single-board hardware platform designed for lighting and prop control. Based on the Parallax Propeller microcontroller, the PropController has 24 I/O pins, can be powered by both AC and DC supplies. Some of things you could control with the PropController include AC Dimmers, Low Voltage DC LEDs, Pixel Strings, hobby servos, and even motors. There are two versions of the PropController, RS-485/DMX and Ethernet. The DMX version features a galvanically isolated RS-485 half-duplex interface. The Ethernet version features the WizNet WIZ812MJ, which makes communicating via Ethernet easy. In addition, both versions are designed to be compact and have 4 mounting holes allowing it to be mounted into any enclosure. Programming the PropController is easy with the on-board USB interface and Parallax's Propeller Tool (a free download from Parallax Inc). To give you a head start a Google Project site has been created to provide both pre-made hardware drivers and completed “program and play” projects. Since the PropController uses the Propeller microcontroller it is supported by a very active community of users at the Parallax forums.
 HISTORY and PURPOSE
 
 I wanted to create a DMX/Ethernet swiss army knife for the DIY Christmas community. I wanted to make something that anyone could learn and customize. Because the Propeller's development environment is free and well documented I'm hoping that not only will people learn to develop with the Propeller but also the community will start to create daughterboards (with drivers). This will allow others to use these building blocks to create a custom controller/dimmer.
@@ -42,6 +42,6 @@ POSSIBLE USES
 
     ...or any combination of the above. 
 
-PropController? Resources
+PropController Resources
 
     PropController Forum: http://doityourselfchristmas.com/forums/forumdisplay.php?91-PropController
