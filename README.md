@@ -44,3 +44,9 @@ POSSIBLE USES
 PropController Resources
 
     PropController Forum: http://doityourselfchristmas.com/forums/forumdisplay.php?91-PropController
+    
+Outstanding Enhancement Requests
+
+    1. Currently the LPD6803_Pixel driver only supports 1 I/O this needs to be extended to 4 to support an entire I/O header.
+    2. Currently the WS2801_Pixel driver only supports 1 I/O this needs to be extended to 4 to support an entire I/O header.
+    3. Currently the Renard driver can only Transmit, it would be nice if it also was able to receive. When the object is called the mode of operation should be specified, Tx or Rx. Note: To do this the enable pin on the transceiver must be controlled since it determines the data direction of the transceiver. Enable Low = Rx, Enable High = Tx.
