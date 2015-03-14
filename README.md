@@ -1,5 +1,4 @@
 # propcontroller
-Automatically exported from code.google.com/p/propcontroller
 
 PropController Description
 
