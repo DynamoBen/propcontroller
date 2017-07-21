@@ -1,4 +1,4 @@
-# propcontroller
+# PropController
 
 PropController Description
 
